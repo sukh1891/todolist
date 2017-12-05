@@ -1,0 +1,79 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-websql": {
+            "PACKAGE_NAME": "com.ktech.todolist"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ktech.gymlords"
+        }
+    }
+}

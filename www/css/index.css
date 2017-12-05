@@ -1,0 +1,271 @@
+html {
+    max-width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url('roboto.ttf');
+}
+
+* a:focus {
+    outline: none;
+}
+
+body {
+    max-width: 100%;
+}
+
+.header {
+    background: #00aad4;
+    color: #fff;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.title {
+    float: left;
+    width: 60%;
+    margin: 15px 5%;
+}
+
+.title b {
+    font-size: 37px;
+    line-height: 30px;
+}
+
+.menu {
+    float: left;
+    width: 20%;
+    margin: 15px 5%;
+    text-align: right;
+}
+
+.menu img {
+    height: 25px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    position: fixed;
+    z-index: 15;
+    top: 55px;
+    right: 0;
+    left: 60%;
+    text-align: center;
+    display: block;
+    background: #eee;
+    font-size: 18px;
+    box-shadow: 0 0 0 1px #888;
+    display: none;
+}
+
+.nav a {
+    display: block;
+    padding: 15px 0;
+}
+
+.tasks {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #aaaaaa;
+    transition: ease all 0.5s;
+    z-index: 20;
+}
+
+.about {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #aaaaaa;
+    transition: ease all 0.5s;
+    z-index: 20;
+    display: none;
+}
+
+.tasks.hide {
+    top: 100vh;
+    right: 100%;
+    bottom: -100vh;
+    left: -100%;
+}
+
+.tasks form {
+    width: 80%;
+    margin: 10vh 10%;
+    background: white;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.about .info {
+    width: 80%;
+    margin: 10vh 10%;
+    background: white;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.tasks form b {
+    text-align: center;
+    margin: 2.5% 10% 0 10%;
+    display: block;
+    color: #00aad4;
+    font-size: 20px;
+}
+
+.about .info b {
+    text-align: center;
+    margin: 2.5% 10% 0 10%;
+    display: block;
+    color: #00aad4;
+    font-size: 20px;
+}
+
+.about .info p {
+    margin: 2.5% 10% 0 10%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tasks .field {
+    box-shadow: 0 0 0 2px #00aad4;
+    border: none;
+    border-radius: 5px;
+    width: 76%;
+    margin: 2.5% 10% 0 10%;
+    font-size: 18px;
+    padding: 2%;
+}
+
+.tasks textarea {
+    height: 25vh;
+}
+
+.tasks .button {
+    background: #00aad4;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    margin: 2.5 5%;
+    font-size: 18px;
+    padding: 5px 0;
+    color: white;
+    float: left;
+}
+
+.about a {
+    background: #00aad4;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    margin: 2.5 5%;
+    font-size: 18px;
+    padding: 5px 0;
+    color: white;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+.redback {
+    background: red !important;
+}
+
+.demo {
+    margin: 75px 5%;
+}
+
+.task {
+    height: 45px;
+    padding: 5px 0;
+}
+
+.done {
+    padding: 5px;
+    float: left;
+}
+
+.done img {
+    height: 35px;
+    width: 35px;
+}
+
+.remove {
+    padding: 5px;
+    float: left;
+    display: none;
+}
+
+.remove img {
+    height: 35px;
+    width: 35px;
+    display: none;
+}
+
+.ticrip {
+    width: calc(100% - 90px);
+    height: 45px;
+    float: left;
+}
+
+.ticrip b {
+    height: 25px;
+    line-height: 28px;
+    overflow: hidden;
+    font-size: 20px;
+    display: block;
+}
+
+.ticrip u {
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 15px;
+    display: block;
+}
+
+.addtask {
+    position: fixed;
+    height: 55px;
+    width: 55px;
+    left: 10px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.addtask img {
+    height: 55px;
+    width: 55px;
+}
+
+.removetask {
+    position: fixed;
+    height: 55px;
+    width: 55px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.removetask img {
+    height: 55px;
+    width: 55px;
+}

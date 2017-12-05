@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title>To Do List</title>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body onload="onLoad()">
+    <div class="header">
+        <div class="title">
+            <b>To Do List</b>
+        </div>
+        <div class="menu" onclick="menu();">
+            <img src='img/menu.png'/>
+        </div>
+    </div>
+    <div class="nav" id="nav">
+        <a onclick="about();">About kTech</a>
+    </div>
+    <div class="about">
+        <div class="info">
+            <b>About kTech</b>
+            <p>
+                Khurana Technologies is a complete solutions IT company. We started as Web Designers in Ambala a couple years back. Presently we provide mobile app development, online marketing, logo design and other IT services in Haryana, Punjab, Chandigarh, Delhi and Rajasthan.
+            </p>
+            <a href="http://khuranatech.in/">Visit website</a> <a class="redback" onclick="about();">Close</a>
+        </div>
+    </div>
+    <div id="tasks" class="tasks hide">
+        <form>
+            <b>Add New Task</b>
+            <br/>
+            <input class="field" type="text" id="title" placeholder="Title" required/>
+            <br/>
+            <br/>
+            <textarea class="field" id="description" placeholder="Description (optional)"></textarea>
+            <br/>
+            <br/>
+            <input class="button" type="button" onclick="insertDB();" value="Add"/>
+            <input class="button redback" type="button" onclick="hideTask();" value="Close"/>
+        </form>
+    </div>
+    <div id="demo" class="demo"></div>
+    <div class="addtask" onclick="showTask();">
+        <img src="img/addtask.png"/>
+    </div>
+    <div class="removetask" onclick="showRemove();">
+        <img src="img/removetask.png"/>
+    </div>
+</body>
+</html>
